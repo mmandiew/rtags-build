@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: install deps
-      run: sudo apt install -y llvm llvm-dev clang libclang-dev
+      run: sudo apt install -y llvm llvm-dev clang libclang-dev libclang
     - uses: actions/checkout@v4
     - name: configure
       run: ./configure
