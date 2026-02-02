@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: install deps
+      run: sudo apt install -y llvm llvm-dev clang
     - uses: actions/checkout@v4
     - name: configure
       run: ./configure
