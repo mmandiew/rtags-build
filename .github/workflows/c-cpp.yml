@@ -13,7 +13,9 @@ jobs:
 
     steps:
     - name: install deps
-      run: sudo apt install -y llvm llvm-dev clang libclang-dev libclang
+      run: sudo apt-get install libllvm-20-ocaml-dev libllvm20 llvm-20 llvm-20-dev llvm-20-doc llvm-20-examples llvm-20-runtime
+    - name: install deps2
+      run: sudo apt-get install clang-20 clang-tools-20 clang-20-doc libclang-common-20-dev libclang-20-dev libclang1-20 clang-format-20 python3-clang-20 clangd-20 clang-tidy-20 
     - uses: actions/checkout@v4
     - name: configure
       run: ./configure
